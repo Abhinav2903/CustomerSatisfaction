@@ -12,7 +12,7 @@ from typing_extensions import Annotated
 # from zenml.steps import Output, step
 from zenml import step
 
-"""Annotated type is used to attach additional metadata or context to a type hint."""
+
 @step
 def clean_data(
     data: pd.DataFrame,
@@ -26,11 +26,6 @@ def clean_data(
 
     Args:
         data: pd.DataFrame
-    Returns:
-     X_trani:Training_data
-     X_test:Testing data
-     y_train:Training Labels
-     y_test:Testing Labels    
     """
     try:
         preprocess_strategy = DataPreprocessStrategy()
